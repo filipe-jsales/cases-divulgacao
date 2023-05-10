@@ -1,0 +1,8 @@
+{
+  "name": "cases-divulgacao",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:filipe-jsales/cases-divulgacao.git",
+  "author": "Filipe Sales <eduardojs999@gmail.com>",
+  "license": "MIT"
+}
