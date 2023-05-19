@@ -1,15 +1,6 @@
 import NextLink from "../src/components/Link";
 import React from "react";
 
-
-
-
-
-
-
-
-
-
 function Title({ children, as }) {
   const Tag = as;
   return (
@@ -18,7 +9,6 @@ function Title({ children, as }) {
       <style jsx>{`
         ${Tag} {
           color: red;
-          font-family: sans-serif;
         }
       `}</style>
     </React.Fragment>
