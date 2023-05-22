@@ -1,7 +1,8 @@
 import Footer from '../../components/patterns/Footer'
-import Link from '../../components/Link'
 import { theme } from '../../theme/theme';
 import { Image, Box, Text, Icon, Input, Button } from '../../theme/components';
+import Head from 'next/head';
+import NextLink from "../../components/Link";
 
 const LOGO_ALURA_URL = 'images/alura-logo.svg';
 const SIDE_IMAGE_URL = 'images/alura-cases.png'
@@ -96,6 +97,9 @@ function SideImage() {
 export default function HomeScreen() {
   return (
     <Box>
+      <Head>
+        <title>Home - Cases Divulgação</title>
+      </Head>
       <Box
         as="main"
         styleSheet={{
@@ -162,7 +166,8 @@ export default function HomeScreen() {
                 }}
               >
                 <Box>
-                  <Link
+                  <NextLink
+                    path={'Faq'}
                     href="/faq"
                     styleSheet={{
                       display: "inline-flex",
@@ -213,7 +218,7 @@ export default function HomeScreen() {
                         aria-hidden="true"
                       />
                     </Text>
-                  </Link>
+                  </NextLink>
                 </Box>
                 <Box
                   styleSheet={{
